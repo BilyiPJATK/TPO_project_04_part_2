@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: TPO_project_04
+  h2:
+    console:
+      path: /my-console
+      enabled: true
+  datasource:
+    url: jdbc:h2:file:./db/blog
+    username: sa
+    password:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    defer-datasource-initialization: true
